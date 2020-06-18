@@ -1,3 +1,7 @@
+provider "aws" {
+  region     = "eu-west-2"
+  shared_credentials_file = "~/.aws/credentials"
+}
 # Create a new load balancer
 resource "aws_elb" "my-elb" {
   name               = "ranjan-terraform-elb"
