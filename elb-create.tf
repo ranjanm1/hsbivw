@@ -1,6 +1,6 @@
 # Create a new load balancer
-resource "aws_elb" "bar" {
-  name               = "foobar-terraform-elb"
+resource "aws_elb" "my-elb" {
+  name               = "ranjan-terraform-elb"
   availability_zones = ["eu-west-2a", "eu-west-2b"]
 
 
@@ -27,6 +27,6 @@ resource "aws_elb" "bar" {
 #  connection_draining_timeout = 400
 
   tags = {
-    Name = "foobar-terraform-elb"
+    Name = "ranjan-terraform-elb"
   }
 }
