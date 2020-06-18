@@ -1,7 +1,6 @@
 provider "aws" {
   region     = "eu-west-2"
-  access_key = "AKIAYDE3XV3EUFDCC3GU"
-  secret_key = "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"
+  shared_credentials_file = "~/.aws/credentials"
 }
 
 data "aws_ami" "ubuntu" {
